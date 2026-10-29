@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Durga Sankar – ML Engineer & Full-Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F2F5F8;--surface:#FFFFFF;--ink:#13202E;--muted:#556575;--line:#D5DDE5;--accent:#2457D6;--heat:#E4472B;--onaccent:#FFFFFF;--panel:#0C1622;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1620;--surface:#16212E;--ink:#E7EDF3;--muted:#9AABBB;--line:#27384A;--accent:#6E9BFF;--heat:#FF6B4D;--onaccent:#0E1620;--panel:#08101A}}
+:root[data-theme="dark"]{--bg:#0E1620;--surface:#16212E;--ink:#E7EDF3;--muted:#9AABBB;--line:#27384A;--accent:#6E9BFF;--heat:#FF6B4D;--onaccent:#0E1620;--panel:#08101A}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:22px;align-items:center;justify-content:space-between;height:60px}
+nav b{font:800 20px "Bricolage Grotesque",sans-serif}
+nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;overflow-x:auto}
+nav ul a{text-decoration:none;color:var(--muted);font-weight:500;font-size:15px;white-space:nowrap}
+nav ul a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;border:1.5px solid var(--ink);font-weight:600;font-size:15px;text-decoration:none;background:transparent;color:var(--ink);transition:background .15s,color .15s}
+.btn:hover{background:var(--ink);color:var(--bg)}
+.btn.main{background:var(--accent);border-color:var(--accent);color:var(--onaccent)}
+.btn.main:hover{filter:brightness(1.1);background:var(--accent);color:var(--onaccent)}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+.hero{padding:72px 0 80px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(52px,8vw,96px);font-weight:800;letter-spacing:-.03em}
+.role{font:500 20px "Bricolage Grotesque",sans-serif;color:var(--accent);margin:14px 0 22px}
+.hero p{max-width:52ch;color:var(--muted);margin:0 0 28px}
+figure{margin:0}
+.scan{background:var(--panel);border-radius:28px;padding:18px;aspect-ratio:1/1;display:flex}
+.scan svg{width:100%;height:100%}
+.heat{transform-origin:300px 250px;animation:bloom 1.6s ease-out both}
+@keyframes bloom{from{opacity:0;transform:scale(.3)}to{opacity:1;transform:scale(1)}}
+@media (prefers-reduced-motion:reduce){.heat{animation:none}html{scroll-behavior:auto}}
+figcaption{font-size:14px;color:var(--muted);margin-top:10px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(32px,4.5vw,48px);letter-spacing:-.02em;margin-bottom:32px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.about p{margin:0 0 16px;max-width:60ch}
+.facts{display:grid;gap:14px;align-content:start}
+.fact{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 20px}
+.fact b{display:block;font:700 18px "Bricolage Grotesque",sans-serif}
+.fact span{color:var(--muted);font-size:15px}
+dl.skills{margin:0;border-top:1px solid var(--line)}
+dl.skills div{display:grid;grid-template-columns:240px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}
+dl.skills dt{font:700 18px "Bricolage Grotesque",sans-serif}
+dl.skills dd{margin:0;display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:3px 12px;font-size:15px}
+.proj{display:grid;grid-template-columns:1.4fr 1fr;gap:24px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:32px}
+.card.big{border-left:6px solid var(--heat)}
+.card h3{font-size:28px;margin-bottom:6px}
+.when{color:var(--muted);font-size:15px;margin:0 0 16px}
+.card ul{padding-left:20px;margin:0 0 20px}
+.card li{margin-bottom:10px}
+.stack{display:flex;flex-wrap:wrap;gap:8px}
+.edu{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.edu h3{font-size:24px;margin-bottom:6px}
+.edu p{margin:0 0 8px;color:var(--muted)}
+.edu ul{margin:0;padding-left:20px}
+.contact{background:var(--panel);color:#E7EDF3;border-radius:28px;padding:56px 40px;text-align:center}
+.contact h2{margin-bottom:14px;color:#fff}
+.contact p{margin:0 auto 28px;max-width:46ch;color:#A9BACB}
+.contact .row{justify-content:center}
+.contact .btn{border-color:#E7EDF3;color:#E7EDF3}
+.contact .btn:hover{background:#E7EDF3;color:#08101A}
+.contact .btn.main{background:#6E9BFF;border-color:#6E9BFF;color:#08101A}
+footer{padding:28px 0 40px;color:var(--muted);font-size:14px;text-align:center}
+@media (max-width:820px){
+.hero .wrap,.about,.proj,.edu{grid-template-columns:1fr}
+dl.skills div{grid-template-columns:1fr;gap:10px}
+nav ul{gap:16px}nav b{display:none}
+.hero{padding-top:40px}.card{padding:24px}.contact{padding:40px 22px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>DS</b>
+<ul><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<header class="hero"><div class="wrap">
+<div>
+<h1>Durga Sankar</h1>
+<p class="role">Machine Learning Engineer, AI Developer, Full-Stack Developer</p>
+<p>I build machine learning systems end to end, from training the model to the API or web app that serves it. I care about explainable models and tools people actually use.</p>
+<div class="row">
+<a class="btn main" href="https://github.com/DurgaSankar99" target="_blank" rel="noopener">GitHub</a>
+<a class="btn" href="https://www.linkedin.com/in/durga-sankar-4a3894273/" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn" href="https://x.com/DurgaSankai" target="_blank" rel="noopener">X</a>
+<a class="btn" href="mailto:durgasankar619@gmail.com">Email me</a>
+</div></div>
+<figure>
+<div class="scan" role="img" aria-label="Illustration of a brain scan with a Grad-CAM heatmap highlighting one region">
+<svg viewBox="0 0 600 600">
+<defs>
+<radialGradient id="hm"><stop offset="0" stop-color="#E4290F"/><stop offset=".25" stop-color="#FF9A1F"/><stop offset=".5" stop-color="#F6E94A" stop-opacity=".8"/><stop offset=".75" stop-color="#37C6A8" stop-opacity=".45"/><stop offset="1" stop-color="#2457D6" stop-opacity="0"/></radialGradient>
+<radialGradient id="tissue"><stop offset="0" stop-color="#5E7389"/><stop offset="1" stop-color="#1B2A3A"/></radialGradient>
+<clipPath id="skull"><ellipse cx="300" cy="300" rx="230" ry="262"/></clipPath>
+</defs>
+<ellipse cx="300" cy="300" rx="236" ry="268" fill="none" stroke="#8FA3B8" stroke-width="6"/>
+<ellipse cx="300" cy="300" rx="230" ry="262" fill="url(#tissue)"/>
+<g clip-path="url(#skull)" fill="none" stroke="#0C1622" stroke-width="7" stroke-linecap="round" opacity=".7">
+<path d="M300 40V560"/>
+<path d="M300 150C230 140 150 170 110 240M300 250C220 240 140 270 100 340M300 350C230 350 160 380 130 450M300 190C370 170 450 200 490 270M300 290C380 280 460 310 500 380M300 400C370 400 440 430 470 490"/>
+</g>
+<g class="heat"><circle cx="388" cy="228" r="120" fill="url(#hm)"/></g>
+</svg></div>
+<figcaption>Illustration: a Grad-CAM overlay shows which part of a scan drove the prediction.</figcaption>
+</figure>
+</div></header>
+
+<main class="wrap">
+<section id="about"><h2>About me</h2>
+<div class="about">
+<div>
+<p>I’m a computer science graduate (Integrated M.Tech, VIT Amaravati) who works across the whole stack, from TensorFlow and Keras models to Flask, FastAPI, Node.js and React front ends.</p>
+<p>My focus is on models people can trust. I add explainability, such as Grad-CAM heatmaps, and make sure the model I serve matches the one I trained.</p>
+<p>I’m looking for an ML Engineer, AI Developer, or software engineering role where that mix is useful.</p>
+</div>
+<div class="facts">
+<div class="fact"><b>Based in Guntur</b><span>Andhra Pradesh, India</span></div>
+<div class="fact"><b>Azure AI-900 certified</b><span>Microsoft Azure AI Fundamentals</span></div>
+<div class="fact"><b>Shipped two projects end to end</b><span>An MRI classifier and a monitoring platform</span></div>
+</div></div></section>
+
+<section id="skills"><h2>Skills</h2>
+<dl class="skills">
+<div><dt>Languages</dt><dd><span class="chip">Python</span><span class="chip">Java</span><span class="chip">JavaScript</span></dd></div>
+<div><dt>ML and AI frameworks</dt><dd><span class="chip">TensorFlow</span><span class="chip">Keras</span><span class="chip">scikit-learn</span><span class="chip">OpenCV</span><span class="chip">LangChain</span><span class="chip">OpenAI GPT-3.5 API</span></dd></div>
+<div><dt>ML techniques</dt><dd><span class="chip">CNNs</span><span class="chip">Transfer learning (EfficientNetV2)</span><span class="chip">RAG</span><span class="chip">LLMs</span><span class="chip">SVM</span><span class="chip">AdaBoost</span><span class="chip">Grad-CAM</span><span class="chip">Embeddings</span></dd></div>
+<div><dt>Web and backend</dt><dd><span class="chip">React</span><span class="chip">Node.js</span><span class="chip">Fastify</span><span class="chip">Flask</span><span class="chip">FastAPI</span><span class="chip">REST APIs</span><span class="chip">PostgreSQL</span></dd></div>
+<div><dt>Developer tools</dt><dd><span class="chip">Git and GitHub</span><span class="chip">Docker</span><span class="chip">Docker Compose</span><span class="chip">MLflow</span><span class="chip">Jupyter</span><span class="chip">VS Code</span><span class="chip">Postman</span></dd></div>
+<div><dt>Cloud and deployment</dt><dd><span class="chip">Microsoft Azure</span><span class="chip">Render</span><span class="chip">GitHub Actions (CI/CD)</span></dd></div>
+</dl></section>
+
+<section id="projects"><h2>Projects</h2>
+<div class="proj">
+<article class="card big">
+<h3>Brain tumor detection with deep learning</h3>
+<p class="when">Nov 2025 – Mar 2026</p>
+<ul>
+<li>Trained an EfficientNetV2-S model to sort brain MRI scans into glioma, meningioma, pituitary tumor, or no tumor. It uses two-phase transfer learning: a frozen backbone first, then fine-tuning from layer 100.</li>
+<li>Added Grad-CAM heatmaps so a radiologist can see which region drove each prediction, not just the result.</li>
+<li>Built a Flask web app: upload an MRI and get a prediction with confidence scores and a full class ranking.</li>
+<li>Built a tf.data pipeline with checkpointing and early stopping, and fixed version conflicts and normalization mismatches so the served model matches the trained one.</li>
+<li>Validated with a confusion matrix and accuracy, precision, recall and F1.</li>
+</ul>
+<div class="stack"><span class="chip">Python</span><span class="chip">TensorFlow</span><span class="chip">Keras</span><span class="chip">EfficientNetV2-S</span><span class="chip">Grad-CAM</span><span class="chip">OpenCV</span><span class="chip">Flask</span></div>
+</article>
+<article class="card">
+<h3>Servelink</h3>
+<p class="when">Service monitoring application</p>
+<ul>
+<li>Tracks service health through periodic heartbeat requests, with a browser dashboard.</li>
+<li>Detects heartbeat timeouts and records downtime and recovery incidents.</li>
+<li>Stores users, services and incidents in PostgreSQL.</li>
+<li>Protects the admin area with bcrypt hashing and HTTP-only session cookies.</li>
+<li>Runs in Docker and Docker Compose with health checks and persistent storage.</li>
+</ul>
+<div class="stack"><span class="chip">Node.js</span><span class="chip">Fastify</span><span class="chip">PostgreSQL</span><span class="chip">Docker</span></div>
+</article>
+</div>
+<p style="margin-top:28px"><a class="btn" href="https://github.com/DurgaSankar99" target="_blank" rel="noopener">See all repositories on GitHub</a></p>
+</section>
+
+<section id="education"><h2>Education and certifications</h2>
+<div class="edu">
+<div>
+<h3>Integrated M.Tech, Computer Science and Engineering</h3>
+<p>Vellore Institute of Technology, Amaravati, 2021 – 2026. GPA 6.82 / 10.</p>
+<p>Coursework: Machine Learning, Deep Learning, Data Structures and Algorithms, Database Management Systems, Software Engineering.</p>
+</div>
+<div>
+<h3>Certifications</h3>
+<ul>
+<li>Microsoft Azure AI Fundamentals (AI-900), Microsoft, Jun – Aug 2024</li>
+<li>Dev Day: AI Demystified, IBM, Jan – Feb 2026</li>
+<li>ION Career Edge for Young Professionals, TCS iON, Mar – May 2025</li>
+</ul></div></div></section>
+
+<section id="contact" style="border-top:0">
+<div class="contact"><h2>Let’s build something</h2>
+<p>I’m open to ML Engineer, AI Developer and software roles. Reach out on any of these.</p>
+<div class="row">
+<a class="btn main" href="mailto:durgasankar619@gmail.com">Email me</a>
+<a class="btn" href="https://www.linkedin.com/in/durga-sankar-4a3894273/" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn" href="https://github.com/DurgaSankar99" target="_blank" rel="noopener">GitHub</a>
+<a class="btn" href="https://x.com/DurgaSankai" target="_blank" rel="noopener">X</a>
+</div></div></section>
+</main>
+<footer>© 2026 Durga Sankar</footer>
+</body>
+</html>
